@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:screenOrientation="portrait"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:text="Help"
+        android:id="@+id/helpButton"
+        android:textStyle="normal"
+        android:layout_height="50dp"
+        android:layout_width="400dp"
+        android:layout_below="@+id/startButton"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"/>
+
+    <Button
+        android:text="Start"
+        android:id="@+id/startButton"
+        android:textStyle="normal"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_width="400dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:onClick="goToThreeButtons" />
+
+    <Button
+        android:text="Quit"
+        android:id="@+id/quitButton"
+        android:textStyle="normal"
+        android:layout_height="50dp"
+        android:layout_width="400dp"
+        android:layout_below="@+id/settingsButton"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"/>
+
+    <Button
+        android:text="Settings"
+        android:id="@+id/settingsButton"
+        android:textStyle="normal"
+        android:layout_height="50dp"
+        android:layout_width="400dp"
+        android:layout_below="@+id/helpButton"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:text="Music App"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textIsSelectable="true"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout >
